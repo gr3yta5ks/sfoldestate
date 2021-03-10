@@ -18,12 +18,12 @@ module.exports = {
     {
       resolve: 'gatsby-source-cosmicjs',
       options: {
-        bucketSlug: process.env.COSMIC_BUCKET,
-        objectTypes: ['posts','settings'],
+        bucketSlug: 'sfoldestate', /* Find this in Your Bucket > Settings > Basic Settings after logging in at https://app.cosmicjs.com/login */
+        objectTypes: ['posts', 'settings'], /* Object types to fetch */
         apiAccess: {
-          read_key: process.env.COSMIC_READ_KEY,
+          read_key: 'iIGlRTzPsE232KOkPyHhwzQX10eaTjFrZozJ2jZJl0GKd1ZM6E', /* Find this in Your Bucket > Settings > API Access after logging in at https://app.cosmicjs.com/login */
         },
-        localMedia: true
+        localMedia: true /* Optional. If you want to enable local image for Gatsby Image */
       }
     },
     {
